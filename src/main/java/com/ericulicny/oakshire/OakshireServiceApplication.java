@@ -1,4 +1,4 @@
-package com.ericulicny.oakshireservice;
+package com.ericulicny.oakshire;
 
 import org.springframework.boot.SpringApplication;
 
