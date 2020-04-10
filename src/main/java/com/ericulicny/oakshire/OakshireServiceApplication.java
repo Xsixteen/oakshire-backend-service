@@ -12,16 +12,10 @@ import java.util.concurrent.Executors;
 
 @SpringBootApplication
 @EnableJpaRepositories
-@EnableScheduling
 public class OakshireServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(OakshireServiceApplication.class, args);
 	}
-
-	@Bean(destroyMethod = "shutdown")
-	public Executor taskScheduler() {
-		return Executors.newScheduledThreadPool(3);
-	}
-
+	
 }
