@@ -7,18 +7,18 @@ import javax.persistence.Id;
 
 @Entity
 public class GateStatusAudit {
-    private String uuid;
+    private long id;
     private GateStatuses gatestatus;
     private Long eventTime;
 
     @Id
     @GeneratedValue(strategy= GenerationType.AUTO)
-    public String getUuid() {
-        return uuid;
+    public long getId() {
+        return id;
     }
 
-    public void setUuid(String uuid) {
-        this.uuid = uuid;
+    public void setId(long uuid) {
+        this.id = uuid;
     }
 
     public GateStatuses getGatestatus() {
